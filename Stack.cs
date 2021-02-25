@@ -37,7 +37,7 @@ namespace MyStackGenericsExample
         public T Peek()
         {
             // если данных нет и Стек пуст то выбрасываем исключение
-            if (size == 0)
+            if (size <= 0)
             {
                 throw new Exception("Stack is empty");
             }
